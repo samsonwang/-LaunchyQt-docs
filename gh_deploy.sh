@@ -6,11 +6,15 @@ git checkout gh-pages
 git pull
 
 DATE=`date '+%Y-%m-%d-%H-%M-%S'`
-BAKDIR="bak-"${DATE}
+BAK_DIR="bak-"${DATE}
 
-mkdir -p build/${BAKDIR}/
-mv * build/${BAKDIR}/ 2>/dev/null
+mkdir -p build/${BAK_DIR}/
+mv * build/${BAK_DIR}/ 2>/dev/null
 
 cp -rf build/html/* .
+
+git add -A
+
+git commit -m "update docs"
 
 #git checkout master
