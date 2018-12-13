@@ -1,1 +1,3 @@
-# -LaunchyQt-docs
+# LaunchyQt-docs
+
+Documentation for LaunchyQt
