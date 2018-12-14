@@ -1,3 +1,3 @@
 
 # sphinx output dir
-build
+bak*

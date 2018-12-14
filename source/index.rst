@@ -7,7 +7,7 @@ LaunchyQt
 =====================================
 
 .. toctree::
-   :caption: intro
+   :caption: Intro
    :maxdepth: 2
 
    about_this_project
@@ -36,7 +36,8 @@ LaunchyQt
    :caption: Plugin Development
    :maxdepth: 2
 
-   plugin_development
+   plugin_dev/cpp
+   plugin_dev/python
 
 
 .. toctree::
