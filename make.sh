@@ -31,6 +31,12 @@ function copy_index() {
     cp -f source/CNAME docs
 }
 
-if [ $# -gt 0 ]; then
+function clean() {
+    echo "clean"
+}
+
+if [ $# -gt 1 ]; then
+    clean
+elif [ $# -gt 0 ]; then
     judge_lang
 fi

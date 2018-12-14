@@ -2,3 +2,4 @@
 # sphinx output dir
 bak*
 __pycache__
+.doctrees
