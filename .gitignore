@@ -1,3 +1,4 @@
 
 # sphinx output dir
 bak*
+__pycache__
