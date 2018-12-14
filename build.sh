@@ -3,4 +3,4 @@
 SOURCEDIR="source"
 BUILDDIR="docs"
 
-sphinx-build -b html ${SOURCEDIR} ${BUILDDIR}
+sphinx-build -a -E -j auto -b html ${SOURCEDIR} ${BUILDDIR}
