@@ -39,11 +39,11 @@ release = ''
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.githubpages',
+#    'sphinx.ext.githubpages',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ['../_templates']
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -79,7 +79,7 @@ pygments_style = None
 #html_theme = "classic"
 #html_theme = "bizstyle"
 html_theme = "sphinx_rtd_theme"
-html_theme_path = ["_themes", ]
+html_theme_path = ["../_themes", ]
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -90,7 +90,7 @@ html_theme_path = ["_themes", ]
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ['../_static']
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
@@ -102,7 +102,7 @@ html_static_path = ['_static']
 #
 # html_sidebars = {}
 
-html_extra_path = ['CNAME']
+# html_extra_path = ['CNAME']
 
 # do not show src as rst, because org-mode is the real source
 html_copy_source = False
