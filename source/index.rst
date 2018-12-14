@@ -6,6 +6,11 @@
 LaunchyQt
 =====================================
 
+.. warning::
+
+   This documentation is still under instruction. Feel lucky if you get anything useful.
+
+
 .. toctree::
    :caption: Intro
    :maxdepth: 2
