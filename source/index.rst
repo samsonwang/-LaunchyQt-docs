@@ -3,18 +3,53 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to LaunchyQt's documentation!
+LaunchyQt
 =====================================
 
 .. toctree::
+   :caption: intro
    :maxdepth: 2
-   :caption: Contents:
+
+   about_this_project
+   installation
+   update_guide
+
+.. toctree::
+   :caption: Basic Usage
+   :maxdepth: 2
+
+   basic_usage
 
 
+.. toctree::
+   :caption: Plugins
+   :maxdepth: 2
 
-Indices and tables
+   plugins/calcy
+   plugins/calcypy
+   plugins/verby
+   plugins/websearchpy
+   plugins/pydirypy
+
+
+.. toctree::
+   :caption: Plugin Development
+   :maxdepth: 2
+
+   plugin_development
+
+
+.. toctree::
+   :caption: Extras
+   :maxdepth: 1
+
+   faq
+   credits
+   changelog
+   license
+
+
+Search
 ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`

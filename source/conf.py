@@ -76,7 +76,10 @@ pygments_style = None
 # a list of builtin themes.
 #
 #html_theme = 'alabaster'
-html_theme = "classic"
+#html_theme = "classic"
+#html_theme = "bizstyle"
+html_theme = "sphinx_rtd_theme"
+html_theme_path = ["_themes", ]
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -100,6 +103,15 @@ html_static_path = ['_static']
 # html_sidebars = {}
 
 html_extra_path = ['CNAME']
+
+# do not show src as rst, because org-mode is the real source
+html_copy_source = False
+html_show_sourcelink = False
+
+
+# html_last_updated_fmt = '%b %d, %Y'
+
+
 
 
 # -- Options for HTMLHelp output ---------------------------------------------

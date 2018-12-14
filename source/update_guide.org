@@ -1,0 +1,10 @@
+#+TITLE: Update Guide
+#+OPTIONS: num:nil toc:nil
+
+** Installed Mode
+
+
+** Portable Mode
+
+
+** Third-Party Plugins

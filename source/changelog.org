@@ -1,0 +1,54 @@
+#+TITLE: Changelog
+#+OPTIONS: H:1 num:nil toc:nil
+
+
+** 3.0.5 (2018-12-12)
+ - bug fix: launchy may crash on restart while option dialaog is open
+ - use pip to manage python package
+ - network proxy setting
+ - update check and new version notify
+ - add "run as admin" in verby
+ - new plugin PyDiryPy, it is ported from [[https://github.com/kshahar/pylaunchy][pylaunchy]]
+
+** 3.0.4 （2018-11-30）
+ - fix display problem in 4k hidpi (issue [[https://github.com/samsonwang/LaunchyQt/issues/2][#2]])
+ - in portable mode, put ini file in config folder, I think it is more tidy this way
+ - fix a bug in input text parsing
+ - add "restart launchy" to tray menu
+ - add python plugin configuration file "pluginconf.py" in "launchy/python", this file is optional and loaded before all python plugins
+ - new plugin in python, WebSearchPy, it is ported from [[https://github.com/j5shi/Thruster][Thruster]]
+
+** 3.0.3
+ - built-in python support (write plugin in python)
+ - tasky plugin works now
+ - option dialog use fusion style from qt
+ - fix display bug in alternative list caused by different icon size
+ - fix "hide when lost focus" fails when focus is on alternative list
+ - put all plugin in each standalone folder (doing this to prepare for build-in python script integration)
+ - pack additional vcredist file (just in case that you do not want to download and install vcredist2015)
+ - change skin name (hDPI -> HiDPI)
+
+ To python plugin developers:
+ - write plugin in python is more like a preview feature, not all launchy interface is ported to python, and I will keep working on this part to provide a better and more comprehensive support.
+ - I rarely develop in python, and I just learned the basics of python, so I need suggestions and advices about python. If you have any idea or I did something wrong, go ahead and post an issue.
+ - If you need extra lanchy interface exposed to python, post an issue.
+
+** 3.0.2
+ - Verby plugin works now
+ - Calcy plugin can convert among octal decimal hexadecimal, this works when input has a trailing equal symbol, try following input: =035== , =35== , =0x35==
+ - add skins for high DPI, this may help in 2k or 4k display (Issue [[https://github.com/samsonwang/LaunchyQt/issues/1][#1]])
+ - pack additional qt dll (Issue [[https://github.com/samsonwang/LaunchyQt/issues/1][#1]])
+ - fix bug in key bindings
+
+** 3.0.1
+ - tray icon show message while starting second instance
+ - write log file in sytem temp folder, log could be turn off in option dialog
+ - use launchy.dll for plugin shared class types
+ - calcy plugin works now
+ - fix minor bugs
+ - refine code structure for future development
+
+** 3.0.0
+ - Qt5.11.1, It's 2018 now, migrated to Qt higher version.
+ - non-boost dependency, C++11 supports shared_ptr , and I'm trying to get Launchy out of boost library.
+ - whole new hotkey implemetation, the hotkey did not work, I tried hard to fix it, but it still failed, so I write a new one.
