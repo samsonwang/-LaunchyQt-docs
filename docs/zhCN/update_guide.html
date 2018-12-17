@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Update Guide &mdash; LaunchyQt  文档</title>
+  <title>升级指引 &mdash; LaunchyQt  文档</title>
   
 
   
@@ -36,7 +36,7 @@
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
     <link rel="next" title="Basic Usage" href="basic_usage.html" />
-    <link rel="prev" title="Installation" href="installation.html" />
+    <link rel="prev" title="安装指引" href="installation.html" />
     <link href="_static/css/theme_override.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -86,11 +86,10 @@
               <p class="caption"><span class="caption-text">介绍</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="about_this_project.html">项目简介</a></li>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Update Guide</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#installed-mode">Installed Mode</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#portable-mode">Portable Mode</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#third-party-plugins">Third-Party Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">安装指引</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">升级指引</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">安装模式的升级</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">便携模式的升级</a></li>
 </ul>
 </li>
 </ul>
@@ -162,7 +161,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Update Guide</li>
+      <li>升级指引</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -179,16 +178,109 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="update-guide">
-<h1>Update Guide<a class="headerlink" href="#update-guide" title="永久链接至标题">¶</a></h1>
-<div class="section" id="installed-mode">
-<h2>Installed Mode<a class="headerlink" href="#installed-mode" title="永久链接至标题">¶</a></h2>
+  <div class="section" id="id1">
+<h1>升级指引<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>如果之前没有安装过LaunchyQt，请查看上一章 <strong>安装指引</strong> 。</p>
+<p>LaunchyQt需要手动进行软件升级。</p>
+<p><strong>注意：</strong> 在进行软件升级之前，需要退出LaunchyQt程序。可以通过托盘图标或主界面的右键菜单退出程序。</p>
+<p>在确保LaunchyQt退出之后，就可以开始软件升级了。LaunchyQt有两种运行模式，它们的软件升级的步骤稍有不同，所以首先要确定的是LaunchyQt的运行模式。</p>
+<p><strong>技巧：</strong> 可以打开LaunchyQt的安装目录，检查是否存在 <code class="docutils literal notranslate"><span class="pre">config/launchy.ini</span></code> 这个文件（需要检查是否存在 <code class="docutils literal notranslate"><span class="pre">config</span></code> 目录，并且该目录下是否存在 <code class="docutils literal notranslate"><span class="pre">launchy.ini</span></code> ）。如果存在这个目录和文件，就是便携模式，否则，是安装模式。</p>
+<div class="section" id="id2">
+<h2>安装模式的升级<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<ol class="arabic">
+<li><div class="first line-block">
+<div class="line"><strong>打开LaunchyQt的安装目录</strong></div>
+<div class="line">以 <code class="docutils literal notranslate"><span class="pre">D:\Launchy</span></code> 为例，将该目录备份为 <code class="docutils literal notranslate"><span class="pre">D:\Launchy_bak</span></code> 。</div>
 </div>
-<div class="section" id="portable-mode">
-<h2>Portable Mode<a class="headerlink" href="#portable-mode" title="永久链接至标题">¶</a></h2>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>打开新版本的LaunchyQt压缩包</strong></div>
+<div class="line">压缩包的名字应该是 <code class="docutils literal notranslate"><span class="pre">Launchy-X-X-X.7z</span></code> 或 <code class="docutils literal notranslate"><span class="pre">Launchy-X-X-X.zip</span></code> 。</div>
 </div>
-<div class="section" id="third-party-plugins">
-<h2>Third-Party Plugins<a class="headerlink" href="#third-party-plugins" title="永久链接至标题">¶</a></h2>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>提取压缩包中的文件到</strong> <code class="docutils literal notranslate"><span class="pre">D:\</span></code> <strong>目录</strong></div>
+<div class="line">如果解压后的文件夹名与 <code class="docutils literal notranslate"><span class="pre">D:\Launchy</span></code> 不一致，则将其重命名为 <code class="docutils literal notranslate"><span class="pre">D:\Launchy</span></code> 。</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>（可选）迁移第三方皮肤</strong></div>
+<div class="line">如果安装了第三方的皮肤，则需要将它们迁移到新版程序的目录下。检查 <code class="docutils literal notranslate"><span class="pre">D:\Launchy_bak\skins</span></code> 目录下是否有第三方皮肤，将其拷贝至 <code class="docutils literal notranslate"><span class="pre">D:\Launchy\skins</span></code> 目录下。</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>（可选）迁移第三方插件</strong></div>
+<div class="line">如果安装了第三方的插件，则需要将它们迁移到新版程序的目录下。检查 <code class="docutils literal notranslate"><span class="pre">D:\Launchy_bak\plugins</span></code> 目录下是否有第三方插件，将其拷贝至 <code class="docutils literal notranslate"><span class="pre">D:\Launchy\plugins</span></code> 目录下。</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>（可选）迁移第三方Python包</strong></div>
+<div class="line">如果第三方的Python插件需要依赖额外的Python包，则需要将它们迁移到新版程序的目录下。检查 <code class="docutils literal notranslate"><span class="pre">D:\Launchy_bak\python</span></code> 目录下是否有第三方Python包，将其拷贝至 <code class="docutils literal notranslate"><span class="pre">D:\Launchy\python</span></code> 目录下。</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>（可选）迁移pip管理的Python包</strong></div>
+<div class="line">如果使用了pip安装Python包，则需要将它们迁移到新版程序的目录下。检查 <code class="docutils literal notranslate"><span class="pre">D:\Launchy_bak\Lib</span></code> 目录下是否有额外的Python包，将其拷贝至 <code class="docutils literal notranslate"><span class="pre">D:\Launchy\Lib</span></code> 的 <strong>对应</strong> 目录下。</div>
+<div class="line">当然，可以使用pip再次安装Python插件依赖的包。</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>升级完成</strong></div>
+<div class="line">现在可以运行 <code class="docutils literal notranslate"><span class="pre">D:\Launchy\Launchy.exe</span></code> 了。确保升级成功后，可以删掉 <code class="docutils literal notranslate"><span class="pre">D:\Launchy_bak</span></code> 文件夹。</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="id3">
+<h2>便携模式的升级<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<ol class="arabic">
+<li><div class="first line-block">
+<div class="line"><strong>打开LaunchyQt的安装目录</strong></div>
+<div class="line">以 <code class="docutils literal notranslate"><span class="pre">D:\Launchy</span></code> 为例，将该目录备份为 <code class="docutils literal notranslate"><span class="pre">D:\Launchy_bak</span></code> 。</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>打开新版本的LaunchyQt压缩包</strong></div>
+<div class="line">压缩包的名字应该是 <code class="docutils literal notranslate"><span class="pre">Launchy-X-X-X.7z</span></code> 或 <code class="docutils literal notranslate"><span class="pre">Launchy-X-X-X.zip</span></code> 。</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>提取压缩包中的文件到</strong> <code class="docutils literal notranslate"><span class="pre">D:\</span></code> <strong>目录</strong></div>
+<div class="line">如果解压后的文件夹名与 <code class="docutils literal notranslate"><span class="pre">D:\Launchy</span></code> 不一致，则将其重命名为 <code class="docutils literal notranslate"><span class="pre">D:\Launchy</span></code> 。</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>迁移配置文件</strong></div>
+<div class="line">便携模式的配置文件存放在 <code class="docutils literal notranslate"><span class="pre">D:\Launchy_bak\config</span></code> 目录中，将该 <strong>目录</strong> 拷贝至 <code class="docutils literal notranslate"><span class="pre">D:\Launchy</span></code> 目录下，最终确保 <code class="docutils literal notranslate"><span class="pre">D:\Launchy\config</span></code> 中有 <code class="docutils literal notranslate"><span class="pre">launchy.ini</span></code> 文件。</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>（可选）迁移第三方皮肤</strong></div>
+<div class="line">如果安装了第三方的皮肤，则需要将它们迁移到新版程序的目录下。检查 <code class="docutils literal notranslate"><span class="pre">D:\Launchy_bak\skins</span></code> 目录下是否有第三方皮肤，将其拷贝至 <code class="docutils literal notranslate"><span class="pre">D:\Launchy\skins</span></code> 目录下。</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>（可选）迁移第三方插件</strong></div>
+<div class="line">如果安装了第三方的插件，则需要将它们迁移到新版程序的目录下。检查 <code class="docutils literal notranslate"><span class="pre">D:\Launchy_bak\plugins</span></code> 目录下是否有第三方插件，将其拷贝至 <code class="docutils literal notranslate"><span class="pre">D:\Launchy\plugins</span></code> 目录下。</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>（可选）迁移第三方Python包</strong></div>
+<div class="line">如果第三方的Python插件需要依赖额外的Python包，则需要将它们迁移到新版程序的目录下。检查 <code class="docutils literal notranslate"><span class="pre">D:\Launchy_bak\python</span></code> 目录下是否有第三方Python包，将其拷贝至 <code class="docutils literal notranslate"><span class="pre">D:\Launchy\python</span></code> 目录下。</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>（可选）迁移pip管理的Python包</strong></div>
+<div class="line">如果使用了pip安装Python包，则需要将它们迁移到新版程序的目录下。检查 <code class="docutils literal notranslate"><span class="pre">D:\Launchy_bak\Lib</span></code> 目录下是否有额外的Python包，将其拷贝至 <code class="docutils literal notranslate"><span class="pre">D:\Launchy\Lib</span></code> 的 <strong>对应</strong> 目录下。</div>
+<div class="line">当然，可以使用pip再次安装Python插件依赖的包。</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>升级完成</strong></div>
+<div class="line">现在可以运行 <code class="docutils literal notranslate"><span class="pre">D:\Launchy\Launchy.exe</span></code> 了。确保升级成功后，可以删掉 <code class="docutils literal notranslate"><span class="pre">D:\Launchy_bak</span></code> 文件夹。</div>
+</div>
+</li>
+</ol>
 </div>
 </div>
 
@@ -203,7 +295,7 @@
         <a href="basic_usage.html" class="btn btn-neutral float-right" title="Basic Usage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="installation.html" class="btn btn-neutral" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="installation.html" class="btn btn-neutral" title="安装指引" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
