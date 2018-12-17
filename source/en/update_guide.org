@@ -1,10 +1,54 @@
 #+TITLE: Update Guide
-#+OPTIONS: num:nil toc:nil
+#+OPTIONS: num:nil toc:nil \n:t
+
+If you have not installed LaunchyQt before, please see the previous chapter =Installation= .
+
+LaunchyQt requires manual software upgrades.
+
+*Note:* You need to exit the LaunchyQt program before proceeding with the software upgrade. You can exit the program via the the context menu of tray icon or main user interface.
+
+After ensuring that LaunchyQt exits, you can begin the software upgrade procedure. LaunchyQt has two running modes, and the software upgrade steps are slightly different. So, you have to determine the running mode first.
+
+*Tip:* You can open the installation directory of LaunchyQt and check if the =config/launchy.ini= file exists (you need to check if the =config= directory exists and if =launchy.ini= exists). If this directory and file exist, it is portable mode, otherwise it is the installed mode.
+
 
 ** Installed Mode
+1. *Open the installation directory*
+   Take =D:\Launchy= as an example, back up this directory as =D:\Launchy_bak= .
+2. *Open the new version zipped file*
+   The name of the zipped file should be =Launchy-X-X-X.7z= or =Launchy-X-X-X.zip= .
+3. *Extract the zipped file to* =D:\=
+   If the unzipped folder name does not match =D:\Launchy= , rename it to =D:\Launchy= .
+4. *(Optional) Migrate third-party skins*
+   If you have installed third-party skins, you need to migrate them to the newer program directory. Check the =D:\Launchy_bak\skins= directory for third-party skins and copy them to the =D:\Launchy\skins= directory.
+5. *(Optional) Migrate third-party plugins*
+   If you have installed third-party plugins, you need to migrate them to the newer program directory. Check the =D:\Launchy_bak\plugins= directory for third-party plugins and copy them to the =D:\Launchy\plugins= directory.
+6. *(Optional) Migrate third-party Python packages*
+   If a third-party Python plugin requires additional Python packages, you need to migrate them to the newer program directory. Check if there is a third-party Python package in the =D:\Launchy_bak\python= directory and copy it to the =D:\Launchy\python= directory.
+7. *(Optional) Migrate Pip Managed Python Packages*
+   If you have install install Python packages by pip, you need to migrate them to the new program directory. Check if there are extra Python packages in the =D:\Launchy_bak\Lib= directory and copy them to the *corresponding* directory of =D:\Launchy\Lib= .
+   Of course, you could use pip to install the packages again.
+8. *Update completed*
+   You can now run =D:\Launchy\Launchy.exe= . Once the upgrade is successful, you can delete the =D:\Launchy_bak= folder.
 
 
 ** Portable Mode
-
-
-** Third-Party Plugins
+1. *Open the installation directory*
+   Take =D:\Launchy= as an example, back up this directory as =D:\Launchy_bak= .
+2. *Open the new version zipped file*
+   The name of the zipped file should be =Launchy-X-X-X.7z= or =Launchy-X-X-X.zip= .
+3. *Extract the zipped file to* =D:\=
+   If the unzipped folder name does not match =D:\Launchy= , rename it to =D:\Launchy= .
+4. *(Optional) Migrate third-party skins*
+   If you have installed third-party skins, you need to migrate them to the newer program directory. Check the =D:\Launchy_bak\skins= directory for third-party skins and copy them to the =D:\Launchy\skins= directory.
+5. *Migrate configuarion file*
+   The portable mode configuration file is stored in =D:\Launchy_bak\config= directory, and copy the *directory* to =D:\Launchy= directory. Ensure that there is a =launchy.ini= file in =D:\Launchy\config= .
+6. *(Optional) Migrate third-party plugins*
+   If you have installed third-party plugins, you need to migrate them to the newer program directory. Check the =D:\Launchy_bak\plugins= directory for third-party plugins and copy them to the =D:\Launchy\plugins= directory.
+7. *(Optional) Migrate third-party Python packages*
+   If a third-party Python plugin requires additional Python packages, you need to migrate them to the newer program directory. Check if there is a third-party Python package in the =D:\Launchy_bak\python= directory and copy it to the =D:\Launchy\python= directory.
+8. *(Optional) Migrate Pip Managed Python Packages*
+   If you have install install Python packages by pip, you need to migrate them to the new program directory. Check if there are extra Python packages in the =D:\Launchy_bak\Lib= directory and copy them to the *corresponding* directory of =D:\Launchy\Lib= .
+   Of course, you could use pip to install the packages again.
+9. *Update completed*
+   You can now run =D:\Launchy\Launchy.exe= . Once the upgrade is successful, you can delete the =D:\Launchy_bak= folder.
