@@ -2,14 +2,14 @@
 #+OPTIONS: num:nil toc:nil
 
 * LaunchyQt是什么
-Launchy is a free utility designed to help you forget about your start menu, your desktop icons, and your file manager. Launchy indexes and launches your applications, documents, project files, folders, and bookmarks with just a few keystrokes!
+Launchy是一款小工具，旨在帮助您忘记开始菜单，桌面图标和文件管理器。只需几次按键即可搜索并启动应用程序，文档，项目文件和文件夹！
 
-I have been using Launchy for years, and found that this project has not been updated since 2010. I love this tool and want to maintain this project.
+我一直在使用Launchy多年，并发现这个项目自2010年以来一直没有更新。我喜欢这个工具，并希望维护这个项目。
 
 * 核心功能
-- find and run program
-- simple calculator (by Calcy plugin)
-- open plugin system
-- develop plugin in C++
-- develop plugin in python
-- using pip to manage python packages
+- 快速搜索并启动程序
+- 计算器（由Calcy插件提供）
+- 开放的插件系统
+- 用C++开发插件
+- 用Python中开发插件
+- 使用pip管理Python包

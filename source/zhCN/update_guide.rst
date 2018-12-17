@@ -1,15 +1,73 @@
-============
-Update Guide
-============
+========
+升级指引
+========
 
 
+如果之前没有安装过LaunchyQt，请查看上一章 **安装指引** 。
 
+LaunchyQt需要手动进行软件升级。
 
-Installed Mode
+**注意：** 在进行软件升级之前，需要退出LaunchyQt程序。可以通过托盘图标或主界面的右键菜单退出程序。
+
+在确保LaunchyQt退出之后，就可以开始软件升级了。LaunchyQt有两种运行模式，它们的软件升级的步骤稍有不同，所以首先要确定的是LaunchyQt的运行模式。
+
+**技巧：** 可以打开LaunchyQt的安装目录，检查是否存在 ``config/launchy.ini`` 这个文件（需要检查是否存在 ``config`` 目录，并且该目录下是否存在 ``launchy.ini`` ）。如果存在这个目录和文件，就是便携模式，否则，是安装模式。
+
+安装模式的升级
 --------------
 
-Portable Mode
--------------
+1. | **打开LaunchyQt的安装目录**
+   | 以 ``D:\Launchy`` 为例，将该目录备份为 ``D:\Launchy_bak`` 。
 
-Third-Party Plugins
--------------------
+2. | **打开新版本的LaunchyQt压缩包**
+   | 压缩包的名字应该是 ``Launchy-X-X-X.7z`` 或 ``Launchy-X-X-X.zip`` 。
+
+3. | **提取压缩包中的文件到** ``D:\`` **目录**
+   | 如果解压后的文件夹名与 ``D:\Launchy`` 不一致，则将其重命名为 ``D:\Launchy`` 。
+
+4. | **（可选）迁移第三方皮肤**
+   | 如果安装了第三方的皮肤，则需要将它们迁移到新版程序的目录下。检查 ``D:\Launchy_bak\skins`` 目录下是否有第三方皮肤，将其拷贝至 ``D:\Launchy\skins`` 目录下。
+
+5. | **（可选）迁移第三方插件**
+   | 如果安装了第三方的插件，则需要将它们迁移到新版程序的目录下。检查 ``D:\Launchy_bak\plugins`` 目录下是否有第三方插件，将其拷贝至 ``D:\Launchy\plugins`` 目录下。
+
+6. | **（可选）迁移第三方Python包**
+   | 如果第三方的Python插件需要依赖额外的Python包，则需要将它们迁移到新版程序的目录下。检查 ``D:\Launchy_bak\python`` 目录下是否有第三方Python包，将其拷贝至 ``D:\Launchy\python`` 目录下。
+
+7. | **（可选）迁移pip管理的Python包**
+   | 如果使用了pip安装Python包，则需要将它们迁移到新版程序的目录下。检查 ``D:\Launchy_bak\Lib`` 目录下是否有额外的Python包，将其拷贝至 ``D:\Launchy\Lib`` 的 **对应** 目录下。
+   | 当然，可以使用pip再次安装Python插件依赖的包。
+
+8. | **升级完成**
+   | 现在可以运行 ``D:\Launchy\Launchy.exe`` 了。确保升级成功后，可以删掉 ``D:\Launchy_bak`` 文件夹。
+
+便携模式的升级
+--------------
+
+1. | **打开LaunchyQt的安装目录**
+   | 以 ``D:\Launchy`` 为例，将该目录备份为 ``D:\Launchy_bak`` 。
+
+2. | **打开新版本的LaunchyQt压缩包**
+   | 压缩包的名字应该是 ``Launchy-X-X-X.7z`` 或 ``Launchy-X-X-X.zip`` 。
+
+3. | **提取压缩包中的文件到** ``D:\`` **目录**
+   | 如果解压后的文件夹名与 ``D:\Launchy`` 不一致，则将其重命名为 ``D:\Launchy`` 。
+
+4. | **迁移配置文件**
+   | 便携模式的配置文件存放在 ``D:\Launchy_bak\config`` 目录中，将该 **目录** 拷贝至 ``D:\Launchy`` 目录下，最终确保 ``D:\Launchy\config`` 中有 ``launchy.ini`` 文件。
+
+5. | **（可选）迁移第三方皮肤**
+   | 如果安装了第三方的皮肤，则需要将它们迁移到新版程序的目录下。检查 ``D:\Launchy_bak\skins`` 目录下是否有第三方皮肤，将其拷贝至 ``D:\Launchy\skins`` 目录下。
+
+6. | **（可选）迁移第三方插件**
+   | 如果安装了第三方的插件，则需要将它们迁移到新版程序的目录下。检查 ``D:\Launchy_bak\plugins`` 目录下是否有第三方插件，将其拷贝至 ``D:\Launchy\plugins`` 目录下。
+
+7. | **（可选）迁移第三方Python包**
+   | 如果第三方的Python插件需要依赖额外的Python包，则需要将它们迁移到新版程序的目录下。检查 ``D:\Launchy_bak\python`` 目录下是否有第三方Python包，将其拷贝至 ``D:\Launchy\python`` 目录下。
+
+8. | **（可选）迁移pip管理的Python包**
+   | 如果使用了pip安装Python包，则需要将它们迁移到新版程序的目录下。检查 ``D:\Launchy_bak\Lib`` 目录下是否有额外的Python包，将其拷贝至 ``D:\Launchy\Lib`` 的 **对应** 目录下。
+   | 当然，可以使用pip再次安装Python插件依赖的包。
+
+9. | **升级完成**
+   | 现在可以运行 ``D:\Launchy\Launchy.exe`` 了。确保升级成功后，可以删掉 ``D:\Launchy_bak`` 文件夹。

@@ -1,16 +1,35 @@
-#+TITLE: Installation
-#+OPTIONS: num:nil toc:nil
+#+TITLE: 安装指引
+#+OPTIONS: num:nil toc:nil \n:t
 
 
+如果已经安装了LaunchyQt，那么本次安装是进行软件升级，请查看下一章 *升级指引* 。
 
-** Requirements
-
-** Download
-
-** Installation
-
-
-** Installed Mode
+** 安装条件
+LaunchyQt目前支持Windows7/8/10，不需要额外的依赖环境。
+Linux和MacOS版本正在开发中。
 
 
-** Portable Mode
+** 软件下载
+从 [[https://github.com/samsonwang/LaunchyQt/releases][Github]] 或 [[https://sourceforge.net/projects/launchyqt/files/][Sourceforge]] 下载最新版本的软件包。
+相同名字的 =7z= 和 =zip= 的压缩包里的内容没有任何区别，通常 =7z= 压缩包的体积更小，而 =zip= 压缩包只是为了方便没有安装 =7z= 解压软件的用户。
+
+
+** 软件安装
+LaunchyQt的安装包是一个压缩包，可以解压在任意指定目录。
+解压之后，软件就可以运行了，LaunchyQt默认运行在 *安装模式* 。
+
+** 安装模式与便携模式
+LaunchyQt有两种运行模式： *安装模式* 和 *便携模式* 。二者的区别主要是程序配置的存放位置。
+LaunchyQt在启动时，会检查软件目录下是否存在 =config/launchy.ini= 文件，如果这个文件存在，软件会以便携模式运行，否则软件会以安装模式运行。
+在LaunchyQt的配置界面中可以进行两种运行模式的切换。
+
+
+*** 安装模式
+以安装模式运行时，LaunchyQt的配置文件存放在由操作系统指定的用户配置目录。
+Windows平台的目录为 =C:\Users\%USERNAME%\AppData\Roaming\Launchy= 。
+
+
+*** 便携模式
+以便携模式运行时，LaunchyQt的配置文件存放在程序同级的 =config= 目录下。
+在便携模式下，程序所需的所有配置和文件都存放在一个目录中，这主要是为了方便放在U盘中使用，并能将用户的配置随身携带。
+*技巧：* 在准备重新安装系统之前，可以将安装模式转为便携模式，从而将用户配置保存下来。
