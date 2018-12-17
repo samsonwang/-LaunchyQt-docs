@@ -89,7 +89,6 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Update Guide</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#installed-mode">Installed Mode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#portable-mode">Portable Mode</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#third-party-plugins">Third-Party Plugins</a></li>
 </ul>
 </li>
 </ul>
@@ -180,14 +179,107 @@
             
   <div class="section" id="update-guide">
 <h1>Update Guide<a class="headerlink" href="#update-guide" title="Permalink to this headline">¶</a></h1>
+<p>If you have not installed LaunchyQt before, please see the previous chapter <code class="docutils literal notranslate"><span class="pre">Installation</span></code> .</p>
+<p>LaunchyQt requires manual software upgrades.</p>
+<p><strong>Note:</strong> You need to exit the LaunchyQt program before proceeding with the software upgrade. You can exit the program via the the context menu of tray icon or main user interface.</p>
+<p>After ensuring that LaunchyQt exits, you can begin the software upgrade procedure. LaunchyQt has two running modes, and the software upgrade steps are slightly different. So, you have to determine the running mode first.</p>
+<p><strong>Tip:</strong> You can open the installation directory of LaunchyQt and check if the <code class="docutils literal notranslate"><span class="pre">config/launchy.ini</span></code> file exists (you need to check if the <code class="docutils literal notranslate"><span class="pre">config</span></code> directory exists and if <code class="docutils literal notranslate"><span class="pre">launchy.ini</span></code> exists). If this directory and file exist, it is portable mode, otherwise it is the installed mode.</p>
 <div class="section" id="installed-mode">
 <h2>Installed Mode<a class="headerlink" href="#installed-mode" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><div class="first line-block">
+<div class="line"><strong>Open the installation directory</strong></div>
+<div class="line">Take <code class="docutils literal notranslate"><span class="pre">D:\Launchy</span></code> as an example, back up this directory as <code class="docutils literal notranslate"><span class="pre">D:\Launchy_bak</span></code> .</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>Open the new version zipped file</strong></div>
+<div class="line">The name of the zipped file should be <code class="docutils literal notranslate"><span class="pre">Launchy-X-X-X.7z</span></code> or <code class="docutils literal notranslate"><span class="pre">Launchy-X-X-X.zip</span></code> .</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>Extract the zipped file to</strong> <code class="docutils literal notranslate"><span class="pre">D:\</span></code></div>
+<div class="line">If the unzipped folder name does not match <code class="docutils literal notranslate"><span class="pre">D:\Launchy</span></code> , rename it to <code class="docutils literal notranslate"><span class="pre">D:\Launchy</span></code> .</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>(Optional) Migrate third-party skins</strong></div>
+<div class="line">If you have installed third-party skins, you need to migrate them to the newer program directory. Check the <code class="docutils literal notranslate"><span class="pre">D:\Launchy_bak\skins</span></code> directory for third-party skins and copy them to the <code class="docutils literal notranslate"><span class="pre">D:\Launchy\skins</span></code> directory.</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>(Optional) Migrate third-party plugins</strong></div>
+<div class="line">If you have installed third-party plugins, you need to migrate them to the newer program directory. Check the <code class="docutils literal notranslate"><span class="pre">D:\Launchy_bak\plugins</span></code> directory for third-party plugins and copy them to the <code class="docutils literal notranslate"><span class="pre">D:\Launchy\plugins</span></code> directory.</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>(Optional) Migrate third-party Python packages</strong></div>
+<div class="line">If a third-party Python plugin requires additional Python packages, you need to migrate them to the newer program directory. Check if there is a third-party Python package in the <code class="docutils literal notranslate"><span class="pre">D:\Launchy_bak\python</span></code> directory and copy it to the <code class="docutils literal notranslate"><span class="pre">D:\Launchy\python</span></code> directory.</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>(Optional) Migrate Pip Managed Python Packages</strong></div>
+<div class="line">If you have install install Python packages by pip, you need to migrate them to the new program directory. Check if there are extra Python packages in the <code class="docutils literal notranslate"><span class="pre">D:\Launchy_bak\Lib</span></code> directory and copy them to the <strong>corresponding</strong> directory of <code class="docutils literal notranslate"><span class="pre">D:\Launchy\Lib</span></code> .</div>
+<div class="line">Of course, you could use pip to install the packages again.</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>Update completed</strong></div>
+<div class="line">You can now run <code class="docutils literal notranslate"><span class="pre">D:\Launchy\Launchy.exe</span></code> . Once the upgrade is successful, you can delete the <code class="docutils literal notranslate"><span class="pre">D:\Launchy_bak</span></code> folder.</div>
+</div>
+</li>
+</ol>
 </div>
 <div class="section" id="portable-mode">
 <h2>Portable Mode<a class="headerlink" href="#portable-mode" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><div class="first line-block">
+<div class="line"><strong>Open the installation directory</strong></div>
+<div class="line">Take <code class="docutils literal notranslate"><span class="pre">D:\Launchy</span></code> as an example, back up this directory as <code class="docutils literal notranslate"><span class="pre">D:\Launchy_bak</span></code> .</div>
 </div>
-<div class="section" id="third-party-plugins">
-<h2>Third-Party Plugins<a class="headerlink" href="#third-party-plugins" title="Permalink to this headline">¶</a></h2>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>Open the new version zipped file</strong></div>
+<div class="line">The name of the zipped file should be <code class="docutils literal notranslate"><span class="pre">Launchy-X-X-X.7z</span></code> or <code class="docutils literal notranslate"><span class="pre">Launchy-X-X-X.zip</span></code> .</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>Extract the zipped file to</strong> <code class="docutils literal notranslate"><span class="pre">D:\</span></code></div>
+<div class="line">If the unzipped folder name does not match <code class="docutils literal notranslate"><span class="pre">D:\Launchy</span></code> , rename it to <code class="docutils literal notranslate"><span class="pre">D:\Launchy</span></code> .</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>(Optional) Migrate third-party skins</strong></div>
+<div class="line">If you have installed third-party skins, you need to migrate them to the newer program directory. Check the <code class="docutils literal notranslate"><span class="pre">D:\Launchy_bak\skins</span></code> directory for third-party skins and copy them to the <code class="docutils literal notranslate"><span class="pre">D:\Launchy\skins</span></code> directory.</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>Migrate configuarion file</strong></div>
+<div class="line">The portable mode configuration file is stored in <code class="docutils literal notranslate"><span class="pre">D:\Launchy_bak\config</span></code> directory, and copy the <strong>directory</strong> to <code class="docutils literal notranslate"><span class="pre">D:\Launchy</span></code> directory. Ensure that there is a <code class="docutils literal notranslate"><span class="pre">launchy.ini</span></code> file in <code class="docutils literal notranslate"><span class="pre">D:\Launchy\config</span></code> .</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>(Optional) Migrate third-party plugins</strong></div>
+<div class="line">If you have installed third-party plugins, you need to migrate them to the newer program directory. Check the <code class="docutils literal notranslate"><span class="pre">D:\Launchy_bak\plugins</span></code> directory for third-party plugins and copy them to the <code class="docutils literal notranslate"><span class="pre">D:\Launchy\plugins</span></code> directory.</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>(Optional) Migrate third-party Python packages</strong></div>
+<div class="line">If a third-party Python plugin requires additional Python packages, you need to migrate them to the newer program directory. Check if there is a third-party Python package in the <code class="docutils literal notranslate"><span class="pre">D:\Launchy_bak\python</span></code> directory and copy it to the <code class="docutils literal notranslate"><span class="pre">D:\Launchy\python</span></code> directory.</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>(Optional) Migrate Pip Managed Python Packages</strong></div>
+<div class="line">If you have install install Python packages by pip, you need to migrate them to the new program directory. Check if there are extra Python packages in the <code class="docutils literal notranslate"><span class="pre">D:\Launchy_bak\Lib</span></code> directory and copy them to the <strong>corresponding</strong> directory of <code class="docutils literal notranslate"><span class="pre">D:\Launchy\Lib</span></code> .</div>
+<div class="line">Of course, you could use pip to install the packages again.</div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><strong>Update completed</strong></div>
+<div class="line">You can now run <code class="docutils literal notranslate"><span class="pre">D:\Launchy\Launchy.exe</span></code> . Once the upgrade is successful, you can delete the <code class="docutils literal notranslate"><span class="pre">D:\Launchy_bak</span></code> folder.</div>
+</div>
+</li>
+</ol>
 </div>
 </div>
 
