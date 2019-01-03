@@ -8,7 +8,7 @@ LaunchyQt
 
 .. warning::
 
-   This documentation is still under instruction. Feel lucky if you get anything useful.
+   This documentation is still under construction. Feel lucky if you get anything useful.
 
 
 .. toctree::
@@ -19,8 +19,9 @@ LaunchyQt
    installation
    update_guide
 
+
 .. toctree::
-   :caption: Basic Usage
+   :caption: Usage
    :maxdepth: 2
 
    basic_usage

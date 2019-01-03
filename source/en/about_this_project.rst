@@ -25,4 +25,4 @@ Core Features
 
 - develop plugin in python
 
-- using pip to manage python packages
+- manage python packages with pip

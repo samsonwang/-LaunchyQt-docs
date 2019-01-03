@@ -3,9 +3,9 @@ Update Guide
 ============
 
 
-If you have not installed LaunchyQt before, please see the previous chapter ``Installation`` .
+If you have not installed LaunchyQt before, please check out the previous chapter ``Installation`` .
 
-LaunchyQt requires manual software upgrades.
+LaunchyQt now requires manual software upgrades.
 
 **Note:** You need to exit the LaunchyQt program before proceeding with the software upgrade. You can exit the program via the the context menu of tray icon or main user interface.
 

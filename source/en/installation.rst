@@ -3,30 +3,31 @@ Installation
 ============
 
 
-If LaunchyQt is already installed, this installation is a software upgrade, please see the next chapter **Upgrade Guide** .
+If LaunchyQt is already installed, this time should be a software upgrade, please refer to the next chapter **Upgrade Guide** .
 
 Requirements
 ------------
 
-| LaunchyQt currently supports Windows 7/8/10 and does not require additional dependencies.
-| Linux and MacOS versions are under development.
+LaunchyQt currently supports Windows 7/8/10 and does not require additional dependencies.
+
+Linux and MacOS versions are under development.
 
 Download
 --------
 
 | Download the latest version of LaunchyQt from `Github <https://github.com/samsonwang/LaunchyQt/releases>`_ or `Sourceforge <https://sourceforge.net/projects/launchyqt/files/>`_.
-| There is no difference between the ``7z`` and the ``zip`` package in the same name. Usually the ``7z`` package is smaller, and the ``zip`` package is only for users who don't have the ``7z`` extraction software installed.
+| There is no difference between the ``7z`` and the ``zip`` package with the same name. Usually the ``7z`` package is smaller, and the ``zip`` package is only for the users who don't have a ``7z`` extraction software installed.
 
 Installation
 ------------
 
-| The LaunchyQt installation package is a zipped file that can be extracted in any given directory.
-| After unzipping, the software could run. By default, LaunchyQt will run in **installed mode**.
+| The LaunchyQt installation package is a zipped file that can be extracted in any directory.
+| After unzipped, the software is ready to run. By default, LaunchyQt will run in **installed mode** .
 
 Installed Mode and Portable Mode
 --------------------------------
 
-| LaunchyQt has two modes: **installed mode** and **portable mode**. The difference between the two is mainly the storage location of the program configuration.
+| LaunchyQt has two modes: **installed mode** and **portable mode**. The difference between the two is mainly on the storage location of the program configuration.
 | When LaunchyQt starts, it checks if there is a ``config/launchy.ini`` file in the software directory. If this file exists, the software will run in portable mode, otherwise the software will run in installed mode.
 | In the LaunchyQt option dialog, two modes can be switched.
 
@@ -41,4 +42,4 @@ Portable Mode
 
 | When running in portable mode, the configuration files for LaunchyQt are stored in the ``config`` directory of program directory.
 | In portable mode, all the program configurations and executable files are stored in only one directory, which is convenient to be stored in a USB flash drive and move around.
-| **Tips:** Before you reinstall your system, you can save the user configuration by switching the installed mode to portable mode.
+| **Tips:** Before you reinstall your system, you can save the LaunchyQt configuration by switching the installed mode to portable mode.
