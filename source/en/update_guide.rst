@@ -3,15 +3,15 @@ Update Guide
 ============
 
 
-If you have not installed LaunchyQt before, please check out the previous chapter ``Installation`` .
+If you have not installed Launchy before, please check out the previous chapter ``Installation`` .
 
-LaunchyQt now requires manual software upgrades.
+Launchy now requires manual software upgrades.
 
-**Note:** You need to exit the LaunchyQt program before proceeding with the software upgrade. You can exit the program via the the context menu of tray icon or main user interface.
+**Note:** You need to exit the Launchy program before proceeding with the software upgrade. You can exit the program via the the context menu of tray icon or main user interface.
 
-After ensuring that LaunchyQt exits, you can begin the software upgrade procedure. LaunchyQt has two running modes, and the software upgrade steps are slightly different. So, you have to determine the running mode first.
+After ensuring that Launchy exits, you can begin with the software upgrade procedure. Launchy has two running modes, and the software upgrade steps are slightly different between them. So you have to determine the running mode first.
 
-**Tip:** You can open the installation directory of LaunchyQt and check if the ``config/launchy.ini`` file exists (you need to check if the ``config`` directory exists and if ``launchy.ini`` exists). If this directory and file exist, it is portable mode, otherwise it is the installed mode.
+**Tips:** You can open the installation directory of Launchy and check if the ``config/launchy.ini`` file exists (you need to check if the ``config`` directory exists and the ``launchy.ini`` exists). If this directory and file exists, it is portable mode, otherwise it is installed mode.
 
 Installed Mode
 --------------
@@ -36,7 +36,7 @@ Installed Mode
 
 7. | **(Optional) Migrate Pip Managed Python Packages**
    | If you have install install Python packages by pip, you need to migrate them to the new program directory. Check if there are extra Python packages in the ``D:\Launchy_bak\Lib`` directory and copy them to the **corresponding** directory of ``D:\Launchy\Lib`` .
-   | Of course, you could use pip to install the packages again.
+   | Of course, you could also use pip to install the packages again.
 
 8. | **Update completed**
    | You can now run ``D:\Launchy\Launchy.exe`` . Once the upgrade is successful, you can delete the ``D:\Launchy_bak`` folder.

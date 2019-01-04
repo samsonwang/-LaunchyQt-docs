@@ -31,7 +31,6 @@ LaunchyQt
    :caption: Plugins
    :maxdepth: 2
 
-   plugins/calcy
    plugins/calcypy
    plugins/verby
    plugins/websearchpy

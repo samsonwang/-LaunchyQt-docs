@@ -1,3 +1,22 @@
 =======
 CalcyPy
 =======
+
+
+CalcyPy is a simple caculator plugin for Launchy. It can do the basic math from search box.
+
+Here are some examples.
+
+Calculate ``2+3*5`` .
+
+.. image:: ../../_static/img/calc_1.png
+
+
+Calculate ``sin(3.14)`` .
+
+.. image:: ../../_static/img/calc_2.png
+
+
+Calculate ``log(10)`` .
+
+.. image:: ../../_static/img/calc_3.png

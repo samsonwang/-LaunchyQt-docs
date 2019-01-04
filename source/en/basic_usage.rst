@@ -17,6 +17,8 @@ Find and Run Program
 
 You can search for a program and execute it.
 
+.. image:: ../_static/img/search_box.png
+
 Let's take "emacs" as an example, type "emacs" in search box, and there will be a drop list, you can choose a match item with "up arrow" and "down arrow" in the keyboard. Once you have focused the target item, press "Enter", and the program would be excuted.
 
 Launchy would record you search history, and next time when you type in a same program name, Launchy will provide a default match from history. This is very useful when you are searching a frequent item.

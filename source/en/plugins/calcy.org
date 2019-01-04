@@ -1,2 +1,0 @@
-#+TITLE: Calcy
-#+OPTIONS: num:nil toc:nil

@@ -6,6 +6,7 @@ Launchy is a free utility designed to help you forget about your start menu, you
 
 I have been using Launchy for years, and found that this project has not been updated since 2010. I love this tool and want to maintain this project.
 
+
 * Core Features
 - find and run program
 - simple calculator (by Calcy plugin)
