@@ -7,14 +7,14 @@ Here are some examples.
 
 Calculate =2+3*5= .
 
-[[../../_static/img/calc_1.png]]
+[[../../_static/img/calcypy_1.png]]
 
 
 Calculate =sin(3.14)= .
 
-[[../../_static/img/calc_2.png]]
+[[../../_static/img/calcypy_2.png]]
 
 
 Calculate =log(10)= .
 
-[[../../_static/img/calc_3.png]]
+[[../../_static/img/calcypy_3.png]]

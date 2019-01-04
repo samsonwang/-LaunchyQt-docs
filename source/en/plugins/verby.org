@@ -1,2 +1,8 @@
 #+TITLE: Verby
 #+OPTIONS: num:nil toc:nil
+
+Verby allows you do extra commands to executable items.
+
+After you have focused on the program, press =tab=, and you will get following commands.
+
+[[../../_static/img/verby.png]]

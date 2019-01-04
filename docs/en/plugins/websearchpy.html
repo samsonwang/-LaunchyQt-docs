@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>WebsearchPy &mdash; LaunchyQt  documentation</title>
+  <title>WebSearchPy &mdash; LaunchyQt  documentation</title>
   
 
   
@@ -105,7 +105,7 @@ var _hmt = _hmt || [];
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="calcypy.html">CalcyPy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="verby.html">Verby</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">WebsearchPy</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">WebSearchPy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pydirypy.html">PyDiryPy</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Plugin Development</span></p>
@@ -164,7 +164,7 @@ var _hmt = _hmt || [];
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>WebsearchPy</li>
+      <li>WebSearchPy</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -182,7 +182,16 @@ var _hmt = _hmt || [];
            <div itemprop="articleBody">
             
   <div class="section" id="websearchpy">
-<h1>WebsearchPy<a class="headerlink" href="#websearchpy" title="Permalink to this headline">¶</a></h1>
+<h1>WebSearchPy<a class="headerlink" href="#websearchpy" title="Permalink to this headline">¶</a></h1>
+<p>WebSearchPy allows you to search the web quickly.</p>
+<img alt="../_images/websearchpy.png" src="../_images/websearchpy.png" />
+<p>The search engine and keywords is customizable in option dialog.</p>
+<img alt="../_images/websearchpy_conf.png" src="../_images/websearchpy_conf.png" />
+<p>Take cppreference as an example.
+The <code class="docutils literal notranslate"><span class="pre">Key</span></code> is what you can put in search box to indicate a web search. Once you have input <code class="docutils literal notranslate"><span class="pre">cpp</span></code> (make sure the WebSearchPy item is focused), press <code class="docutils literal notranslate"><span class="pre">tab</span></code> and then input what you want to search (this time I want to search <code class="docutils literal notranslate"><span class="pre">vector</span></code> ) and press <code class="docutils literal notranslate"><span class="pre">Enter</span></code> . Your default web browser should open and do the search.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">Url</span></code> is the template to make a search link.</p>
+<p>Here is cppreference search link: <code class="docutils literal notranslate"><span class="pre">https://en.cppreference.com/mwiki/index.php?title=Special%%3ASearch&amp;search=%s</span></code> .</p>
+<p>Pay attention to the last <code class="docutils literal notranslate"><span class="pre">%s</span></code> , this would replaced by your search content.</p>
 </div>
 
 

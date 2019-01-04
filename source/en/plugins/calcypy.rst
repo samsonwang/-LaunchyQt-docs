@@ -9,14 +9,14 @@ Here are some examples.
 
 Calculate ``2+3*5`` .
 
-.. image:: ../../_static/img/calc_1.png
+.. image:: ../../_static/img/calcypy_1.png
 
 
 Calculate ``sin(3.14)`` .
 
-.. image:: ../../_static/img/calc_2.png
+.. image:: ../../_static/img/calcypy_2.png
 
 
 Calculate ``log(10)`` .
 
-.. image:: ../../_static/img/calc_3.png
+.. image:: ../../_static/img/calcypy_3.png
