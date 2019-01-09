@@ -1,2 +1,12 @@
 #+TITLE: PyDiryPy
 #+OPTIONS: num:nil toc:nil
+
+PyDiryPy is very useful in browsing and launching items from frequent directory.
+
+Just input directory name key and press =tab=, and you will get items from the directory.
+
+[[../../_static/img/pydirypy.png]]
+
+Directory key is customizable from option dialog.
+
+[[../../_static/img/pydirypy_conf.png]]
