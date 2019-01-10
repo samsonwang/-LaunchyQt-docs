@@ -24,7 +24,7 @@ LaunchyQt
    :caption: Usage
    :maxdepth: 2
 
-   basic_usage
+   usage
 
 
 .. toctree::
@@ -35,6 +35,14 @@ LaunchyQt
    plugins/verby
    plugins/websearchpy
    plugins/pydirypy
+
+
+
+.. toctree::
+   :caption: Skin
+   :maxdepth: 2
+
+   skin
 
 
 .. toctree::
