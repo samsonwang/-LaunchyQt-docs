@@ -17,7 +17,7 @@ Core Features
 
 - find and run program
 
-- simple calculator (by Calcy plugin)
+- simple calculator (by CalcyPy plugin)
 
 - open plugin system
 
