@@ -8,9 +8,13 @@ Changelog
 3.0.6 (2019-01-17)
 ------------------
 
-- pinyin support
-
 - configurable websites for WebSearchPy
+
+- avoid unnecessary catalog rebuids
+
+- chinese pinyin support
+
+- add some useful scripts in utilities
 
 - better python plugin support
 
