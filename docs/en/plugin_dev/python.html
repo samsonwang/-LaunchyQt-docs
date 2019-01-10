@@ -111,7 +111,11 @@ var _hmt = _hmt || [];
 <p class="caption"><span class="caption-text">Plugin Development</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="cpp.html">Develop in C++</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Develop in Python</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Develop in Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#plugin-template">Plugin Template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#manage-python-packages-by-pip">Manage python packages by pip</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption"><span class="caption-text">Extras</span></p>
 <ul>
@@ -183,9 +187,20 @@ var _hmt = _hmt || [];
             
   <div class="section" id="develop-in-python">
 <h1>Develop in Python<a class="headerlink" href="#develop-in-python" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="plugin-template">
+<h2>Plugin Template<a class="headerlink" href="#plugin-template" title="Permalink to this headline">¶</a></h2>
 <p>Here is a python plugin template, you can use it as a starter kit.</p>
 <p><a class="reference external" href="https://github.com/samsonwang/LaunchyQt/tree/master/plugin_demo/DemoPy">https://github.com/samsonwang/LaunchyQt/tree/master/plugin_demo/DemoPy</a></p>
 <p>If you need extra lanchy interface exposed to python, feel free to contact me.</p>
+</div>
+<div class="section" id="manage-python-packages-by-pip">
+<h2>Manage python packages by pip<a class="headerlink" href="#manage-python-packages-by-pip" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Input <code class="docutils literal notranslate"><span class="pre">lpip</span></code> in launchy search box, and press <code class="docutils literal notranslate"><span class="pre">enter</span></code> (actually we are executing a script named <code class="docutils literal notranslate"><span class="pre">lpip.cmd</span></code> )</li>
+<li>There will be a command line ( <code class="docutils literal notranslate"><span class="pre">cmd</span></code> ) window, and you can use pip now</li>
+</ol>
+<img alt="../_images/launchy_pip.png" src="../_images/launchy_pip.png" />
+</div>
 </div>
 
 
