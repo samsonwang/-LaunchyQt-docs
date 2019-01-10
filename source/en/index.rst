@@ -28,6 +28,13 @@ LaunchyQt
 
 
 .. toctree::
+   :caption: Skin
+   :maxdepth: 2
+
+   skin
+
+
+.. toctree::
    :caption: Plugins
    :maxdepth: 2
 
@@ -35,14 +42,6 @@ LaunchyQt
    plugins/verby
    plugins/websearchpy
    plugins/pydirypy
-
-
-
-.. toctree::
-   :caption: Skin
-   :maxdepth: 2
-
-   skin
 
 
 .. toctree::

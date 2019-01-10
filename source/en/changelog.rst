@@ -5,6 +5,19 @@ Changelog
 
 
 
+3.0.6 (2019-01-17)
+------------------
+
+- pinyin support
+
+- configurable websites for WebSearchPy
+
+- better python plugin support
+
+- Calcy is not maintained, as CalcyPy is better
+
+- ported to linux, I have tested on Deepin Linux (most features are good, but **not** good enough, you can build launchy from source)
+
 3.0.5 (2018-12-12)
 ------------------
 

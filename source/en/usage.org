@@ -1,12 +1,12 @@
 #+OPTIONS: H:1 num:nil toc:nil
 
-* Activate Launchy
+** Activate Launchy
 After LaunchyQt is started, you could Press =Alt + space= (default hotkey) to activate Launchy, this may bring about the main widget of Launchy.
 
 *Tips:* Hotkey is customizable in option dialog.
 
 
-* Find and Run Program
+** Find and Run Program
 You can search for a program and execute it.
 
 [[../_static/img/search_box.png]]

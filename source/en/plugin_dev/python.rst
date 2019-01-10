@@ -14,8 +14,8 @@ Here is a python plugin template, you can use it as a starter kit.
 
 If you need extra lanchy interface exposed to python, feel free to contact me.
 
-Manage python packages by pip
------------------------------
+Manage python packages with pip
+-------------------------------
 
 1. Input ``lpip`` in launchy search box, and press ``enter`` (actually we are executing a script named ``lpip.cmd`` )
 

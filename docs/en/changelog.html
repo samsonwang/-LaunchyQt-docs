@@ -102,17 +102,17 @@ var _hmt = _hmt || [];
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Activate Launchy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html#find-and-run-program">Find and Run Program</a></li>
 </ul>
+<p class="caption"><span class="caption-text">Skin</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="skin.html">Install Addtional Skins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skin.html#build-your-own-skin">Build Your Own Skin</a></li>
+</ul>
 <p class="caption"><span class="caption-text">Plugins</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="plugins/calcypy.html">CalcyPy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plugins/verby.html">Verby</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plugins/websearchpy.html">WebSearchPy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plugins/pydirypy.html">PyDiryPy</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Skin</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="skin.html">Install Addtional Skins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skin.html#build-your-own-skin">Build Your Own Skin</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Plugin Development</span></p>
 <ul>
@@ -124,12 +124,13 @@ var _hmt = _hmt || [];
 <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Changelog</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">3.0.5 (2018-12-12)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">3.0.4 （2018-11-30）</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">3.0.3</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">3.0.2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id8">3.0.1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id9">3.0.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">3.0.6 (2019-01-17)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">3.0.5 (2018-12-12)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">3.0.4 （2018-11-30）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">3.0.3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">3.0.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">3.0.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">3.0.0</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
@@ -198,7 +199,17 @@ var _hmt = _hmt || [];
   <div class="section" id="changelog">
 <h1>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id1">
-<h2>3.0.5 (2018-12-12)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>3.0.6 (2019-01-17)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>pinyin support</li>
+<li>configurable websites for WebSearchPy</li>
+<li>better python plugin support</li>
+<li>Calcy is not maintained, as CalcyPy is better</li>
+<li>ported to linux, I have tested on Deepin Linux (most features are good, but <strong>not</strong> good enough, you can build launchy from source)</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>3.0.5 (2018-12-12)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>bug fix: launchy may crash on restart while option dialaog is open</li>
 <li>use pip to manage python package</li>
@@ -208,8 +219,8 @@ var _hmt = _hmt || [];
 <li>new plugin PyDiryPy, it is ported from <a class="reference external" href="https://github.com/kshahar/pylaunchy">pylaunchy</a></li>
 </ul>
 </div>
-<div class="section" id="id2">
-<h2>3.0.4 （2018-11-30）<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h2>3.0.4 （2018-11-30）<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>fix display problem in 4k hidpi (issue <a class="reference external" href="https://github.com/samsonwang/LaunchyQt/issues/2">#2</a>)</li>
 <li>in portable mode, put ini file in config folder, I think it is more tidy this way</li>
@@ -219,8 +230,8 @@ var _hmt = _hmt || [];
 <li>new plugin in python, WebSearchPy, it is ported from <a class="reference external" href="https://github.com/j5shi/Thruster">Thruster</a></li>
 </ul>
 </div>
-<div class="section" id="id4">
-<h2>3.0.3<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id5">
+<h2>3.0.3<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>built-in python support (write plugin in python)</li>
 <li>tasky plugin works now</li>
@@ -238,8 +249,8 @@ var _hmt = _hmt || [];
 <li>If you need extra lanchy interface exposed to python, post an issue.</li>
 </ul>
 </div>
-<div class="section" id="id5">
-<h2>3.0.2<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id6">
+<h2>3.0.2<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Verby plugin works now</li>
 <li>Calcy plugin can convert among octal decimal hexadecimal, this works when input has a trailing equal symbol, try following input: <code class="docutils literal notranslate"><span class="pre">035=</span></code> , <code class="docutils literal notranslate"><span class="pre">35=</span></code> , <code class="docutils literal notranslate"><span class="pre">0x35=</span></code></li>
@@ -248,8 +259,8 @@ var _hmt = _hmt || [];
 <li>fix bug in key bindings</li>
 </ul>
 </div>
-<div class="section" id="id8">
-<h2>3.0.1<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id9">
+<h2>3.0.1<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>tray icon show message while starting second instance</li>
 <li>write log file in sytem temp folder, log could be turn off in option dialog</li>
@@ -259,8 +270,8 @@ var _hmt = _hmt || [];
 <li>refine code structure for future development</li>
 </ul>
 </div>
-<div class="section" id="id9">
-<h2>3.0.0<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id10">
+<h2>3.0.0<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Qt5.11.1, It’s 2018 now, migrated to Qt higher version.</li>
 <li>non-boost dependency, C++11 supports shared<sub>ptr</sub>, and I’m trying to get Launchy out of boost library.</li>
