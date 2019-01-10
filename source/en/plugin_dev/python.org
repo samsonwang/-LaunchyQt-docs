@@ -1,2 +1,8 @@
 #+TITLE: Develop in Python
 #+OPTIONS: num:nil toc:nil
+
+Here is a python plugin template, you can use it as a starter kit.
+
+https://github.com/samsonwang/LaunchyQt/tree/master/plugin_demo/DemoPy
+
+If you need extra lanchy interface exposed to python, feel free to contact me.
