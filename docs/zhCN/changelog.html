@@ -21,10 +21,11 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/translations.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -196,71 +197,71 @@ var _hmt = _hmt || [];
 <div class="section" id="id1">
 <h2>3.0.5 (2018-12-12)<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
-<li>bug fix: launchy may crash on restart while option dialaog is open</li>
-<li>use pip to manage python package</li>
-<li>network proxy setting</li>
-<li>update check and new version notify</li>
-<li>add “run as admin” in verby</li>
-<li>new plugin PyDiryPy, it is ported from <a class="reference external" href="https://github.com/kshahar/pylaunchy">pylaunchy</a></li>
+<li><p>bug fix: launchy may crash on restart while option dialaog is open</p></li>
+<li><p>use pip to manage python package</p></li>
+<li><p>network proxy setting</p></li>
+<li><p>update check and new version notify</p></li>
+<li><p>add “run as admin” in verby</p></li>
+<li><p>new plugin PyDiryPy, it is ported from <a class="reference external" href="https://github.com/kshahar/pylaunchy">pylaunchy</a></p></li>
 </ul>
 </div>
 <div class="section" id="id2">
 <h2>3.0.4 （2018-11-30）<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
-<li>fix display problem in 4k hidpi (issue <a class="reference external" href="https://github.com/samsonwang/LaunchyQt/issues/2">#2</a>)</li>
-<li>in portable mode, put ini file in config folder, I think it is more tidy this way</li>
-<li>fix a bug in input text parsing</li>
-<li>add “restart launchy” to tray menu</li>
-<li>add python plugin configuration file “pluginconf.py” in “launchy/python”, this file is optional and loaded before all python plugins</li>
-<li>new plugin in python, WebSearchPy, it is ported from <a class="reference external" href="https://github.com/j5shi/Thruster">Thruster</a></li>
+<li><p>fix display problem in 4k hidpi (issue <a class="reference external" href="https://github.com/samsonwang/LaunchyQt/issues/2">#2</a>)</p></li>
+<li><p>in portable mode, put ini file in config folder, I think it is more tidy this way</p></li>
+<li><p>fix a bug in input text parsing</p></li>
+<li><p>add “restart launchy” to tray menu</p></li>
+<li><p>add python plugin configuration file “pluginconf.py” in “launchy/python”, this file is optional and loaded before all python plugins</p></li>
+<li><p>new plugin in python, WebSearchPy, it is ported from <a class="reference external" href="https://github.com/j5shi/Thruster">Thruster</a></p></li>
 </ul>
 </div>
 <div class="section" id="id4">
 <h2>3.0.3<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
-<li>built-in python support (write plugin in python)</li>
-<li>tasky plugin works now</li>
-<li>option dialog use fusion style from qt</li>
-<li>fix display bug in alternative list caused by different icon size</li>
-<li>fix “hide when lost focus” fails when focus is on alternative list</li>
-<li>put all plugin in each standalone folder (doing this to prepare for build-in python script integration)</li>
-<li>pack additional vcredist file (just in case that you do not want to download and install vcredist2015)</li>
-<li>change skin name (hDPI -&gt; HiDPI)</li>
+<li><p>built-in python support (write plugin in python)</p></li>
+<li><p>tasky plugin works now</p></li>
+<li><p>option dialog use fusion style from qt</p></li>
+<li><p>fix display bug in alternative list caused by different icon size</p></li>
+<li><p>fix “hide when lost focus” fails when focus is on alternative list</p></li>
+<li><p>put all plugin in each standalone folder (doing this to prepare for build-in python script integration)</p></li>
+<li><p>pack additional vcredist file (just in case that you do not want to download and install vcredist2015)</p></li>
+<li><p>change skin name (hDPI -&gt; HiDPI)</p></li>
 </ul>
 <p>To python plugin developers:</p>
 <ul class="simple">
-<li>write plugin in python is more like a preview feature, not all launchy interface is ported to python, and I will keep working on this part to provide a better and more comprehensive support.</li>
-<li>I rarely develop in python, and I just learned the basics of python, so I need suggestions and advices about python. If you have any idea or I did something wrong, go ahead and post an issue.</li>
-<li>If you need extra lanchy interface exposed to python, post an issue.</li>
+<li><p>write plugin in python is more like a preview feature, not all launchy interface is ported to python, and I will keep working on this part to provide a better and more comprehensive support.</p></li>
+<li><p>I rarely develop in python, and I just learned the basics of python, so I need suggestions and advices about python. If you have any idea or I did something wrong, go ahead and post an issue.</p></li>
+<li><p>If you need extra lanchy interface exposed to python, post an issue.</p></li>
 </ul>
 </div>
 <div class="section" id="id5">
 <h2>3.0.2<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
-<li>Verby plugin works now</li>
-<li>Calcy plugin can convert among octal decimal hexadecimal, this works when input has a trailing equal symbol, try following input: <code class="docutils literal notranslate"><span class="pre">035=</span></code> , <code class="docutils literal notranslate"><span class="pre">35=</span></code> , <code class="docutils literal notranslate"><span class="pre">0x35=</span></code></li>
-<li>add skins for high DPI, this may help in 2k or 4k display (Issue <a class="reference external" href="https://github.com/samsonwang/LaunchyQt/issues/1">#1</a>)</li>
-<li>pack additional qt dll (Issue <a class="reference external" href="https://github.com/samsonwang/LaunchyQt/issues/1">#1</a>)</li>
-<li>fix bug in key bindings</li>
+<li><p>Verby plugin works now</p></li>
+<li><p>Calcy plugin can convert among octal decimal hexadecimal, this works when input has a trailing equal symbol, try following input: <code class="docutils literal notranslate"><span class="pre">035=</span></code> , <code class="docutils literal notranslate"><span class="pre">35=</span></code> , <code class="docutils literal notranslate"><span class="pre">0x35=</span></code></p></li>
+<li><p>add skins for high DPI, this may help in 2k or 4k display (Issue <a class="reference external" href="https://github.com/samsonwang/LaunchyQt/issues/1">#1</a>)</p></li>
+<li><p>pack additional qt dll (Issue <a class="reference external" href="https://github.com/samsonwang/LaunchyQt/issues/1">#1</a>)</p></li>
+<li><p>fix bug in key bindings</p></li>
 </ul>
 </div>
 <div class="section" id="id8">
 <h2>3.0.1<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
-<li>tray icon show message while starting second instance</li>
-<li>write log file in sytem temp folder, log could be turn off in option dialog</li>
-<li>use launchy.dll for plugin shared class types</li>
-<li>calcy plugin works now</li>
-<li>fix minor bugs</li>
-<li>refine code structure for future development</li>
+<li><p>tray icon show message while starting second instance</p></li>
+<li><p>write log file in sytem temp folder, log could be turn off in option dialog</p></li>
+<li><p>use launchy.dll for plugin shared class types</p></li>
+<li><p>calcy plugin works now</p></li>
+<li><p>fix minor bugs</p></li>
+<li><p>refine code structure for future development</p></li>
 </ul>
 </div>
 <div class="section" id="id9">
 <h2>3.0.0<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
-<li>Qt5.11.1, It’s 2018 now, migrated to Qt higher version.</li>
-<li>non-boost dependency, C++11 supports shared<sub>ptr</sub>, and I’m trying to get Launchy out of boost library.</li>
-<li>whole new hotkey implemetation, the hotkey did not work, I tried hard to fix it, but it still failed, so I write a new one.</li>
+<li><p>Qt5.11.1, It’s 2018 now, migrated to Qt higher version.</p></li>
+<li><p>non-boost dependency, C++11 supports shared<sub>ptr</sub>, and I’m trying to get Launchy out of boost library.</p></li>
+<li><p>whole new hotkey implemetation, the hotkey did not work, I tried hard to fix it, but it still failed, so I write a new one.</p></li>
 </ul>
 </div>
 </div>
