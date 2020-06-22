@@ -4,13 +4,14 @@
 }
 
 .rst-content .line-block {
-  line-height: 2em;
+  line-height: 1.8em;
 }
 
 p {
-  line-height: 2em;
+  line-height: 1.8em;
+  margin-bottom: 1em;
 }
 
 li {
-  line-height: 2em;
+  line-height: 1.8em;
 }

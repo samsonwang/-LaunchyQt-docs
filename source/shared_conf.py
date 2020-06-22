@@ -18,10 +18,12 @@
 
 
 # -- Project information -----------------------------------------------------
+from datetime import datetime
 
 project = 'LaunchyQt'
-copyright = '2018, Samson Wang'
 author = 'Samson Wang'
+copyright = '2018-%s, Samson Wang' % datetime.now().year
+
 
 # The short X.Y version
 version = ''
